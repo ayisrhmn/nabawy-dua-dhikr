@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@theme {
+  --color-primary: #118C4F;
+  --color-secondary: #E5DCC5;
+  --color-accent: #C9B382;
+}
+
+body {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  background: #E5DCC5;
+  font-family: "Open Sans", sans-serif;
+}
+
+ion-content::part(background) {
+  background-color: #E5DCC5;
+}
+
+ion-spinner {
+  width: 42px;
+  height: 42px;
+}
+
+ion-button {
+  --background: #118C4F;
+  --background-hover: #1A9A60;
+  --background-activated: #1A9A60;
+  --background-focused: #1A9A60;
+
+  --border-radius: 8px;
+
+  --padding-top: 16px;
+  --padding-bottom: 16px;
+}
+
+ion-modal#dialog {
+  --width: fit-content;
+  --min-width: 320px;
+  --height: fit-content;
+  --border-radius: 6px;
+  --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+}
+
+ion-spinner {
+  --color: #118C4F !important
+}
+
+/* Hide the horizontal scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+.scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Hide the scrollbar track for WebKit browsers */
+.scrollbar::-webkit-scrollbar-track {
+  display: none;
+}

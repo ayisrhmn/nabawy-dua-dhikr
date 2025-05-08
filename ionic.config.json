@@ -1,0 +1,7 @@
+{
+  "name": "nabawy-dua-dhikr",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
