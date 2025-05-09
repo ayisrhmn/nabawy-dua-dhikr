@@ -32,7 +32,7 @@ const PageWrapper: React.FC<PageWrapperProps> = ({
   return (
     <IonPage className='my-0 mx-auto min-h-full max-w-[640px]'>
       <IonHeader className='relative !shadow-none'>
-        <div className='flex items-center justify-between h-[76px] px-3'>
+        <div className='flex items-center justify-between h-[76px] px-4'>
           <div className='w-6 shrink-0'>
             {useGoBack && (
               <button onClick={handleBack}>
@@ -57,7 +57,7 @@ const PageWrapper: React.FC<PageWrapperProps> = ({
         </div>
       </IonHeader>
       <IonContent fullscreen>
-        <div className='py-4 px-3'>
+        <div className='py-4 px-4'>
           {isLoading ? (
             <div className='h-[70vh] flex'>
               <LoadingSpinner
